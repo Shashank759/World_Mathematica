@@ -1,0 +1,42 @@
+.header {
+    margin:10px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color:  #eaf6f6;;
+    
+  
+    .logo{
+        width: 36px;
+        height: 40px;
+    }
+    .logo-container {
+      height: 100%;
+      width: 70px;
+      padding: 20px;
+      margin-top:25px;
+      align-items: center;
+    }
+  
+    .options {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border: 2px solid #000;
+      border-radius: 15px 50px 15px;
+      border-color:  #66bfbf;
+      -moz-border-radius: 15px;  
+      background-color: #0c8484; 
+      
+  
+      .option {
+        padding: 10px 15px;
+        color: #eaf6f6; 
+        font-size: medium;
+      }
+    }
+  }

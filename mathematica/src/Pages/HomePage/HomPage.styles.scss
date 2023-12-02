@@ -1,10 +1,20 @@
-.homePage{
-    background-image:url('../../Assest/logo.jpg');
-    background-repeat: no-repeat;
-    opacity: 10%;
-    background-position: center;
-    margin: 0;
-    padding:0;
-    height:60rem;
+.header {
     display: flex;
-}
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin-right: 20px;
+  }
+  
+  .option {
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+  }
