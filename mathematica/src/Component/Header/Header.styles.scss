@@ -21,15 +21,14 @@
     }
   
     .options {
-      width: 30%;
+      width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
       border: 2px solid #000;
-      border-radius: 15px 50px 15px;
+      border-radius: 15px 20px 15px;
       border-color:  #66bfbf;
-      -moz-border-radius: 15px;  
+      -moz-border-radius: 5px;  
       background-color: #0c8484; 
       
   
@@ -37,6 +36,6 @@
         padding: 10px 15px;
         color: #eaf6f6; 
         font-size: medium;
-      }
     }
   }
+}
