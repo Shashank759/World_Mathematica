@@ -1,8 +1,10 @@
 import React from "react";
+//import {useState} from 'react'
 import "./Header.styles.scss";
 import BarButton from "../BarButton/Barbutton";
+import Dropdown from "../Dropdown/Dropdown";
 
-class Header extends React.Component {
+ class Header extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -13,15 +15,15 @@ class Header extends React.Component {
       ],
     };
   }
+  
 
   render() {
     return (
       <div className="header">
         <div className="options">
-          <div className="option">
-          {console.log(this.state.content)}
-            <BarButton Name={this.state.content[0].Name} />
-          </div>
+           <div className="option" onMouseEnter={()=>{<Dropdown/>}}>
+        
+          PlayList</div>
           <div className="option">Notes</div>
           <div className="option">Previous Year Paper</div>
           <div className="option">Exams</div>

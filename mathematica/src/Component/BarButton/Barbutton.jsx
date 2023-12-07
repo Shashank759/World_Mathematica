@@ -1,9 +1,8 @@
 import React from "react";
 
 const BarButton = (Name) => {
-  <button type="button">
-    {Name.Name}
-    {console.log(Name.Name)}Name
-  </button>;
+  return( 
+  <button type="button">Name</button>
+  );
 };
 export default BarButton;
