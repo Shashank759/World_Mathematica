@@ -3,8 +3,10 @@ import './Footer.styles.scss'
 
 const Footer = () => {
   return (
-    <div className ="footer">
-      <p>This is the footer content for the About page.</p>
+    <div className="footer">
+      <footer>
+        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

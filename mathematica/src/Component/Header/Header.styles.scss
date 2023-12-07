@@ -1,11 +1,9 @@
 .header {
   height: 70px;
-  padding-bottom: 10px;
-  padding-top: 10px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   background-color: #eaf6f6;
+  position: absolute;
 
   .options {
     width: 100%;

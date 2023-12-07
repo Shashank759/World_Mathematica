@@ -1,12 +1,12 @@
 import './App.css';
-import About from './Pages/AboutPage/About';
 import HomePage from './Pages/HomePage/HomePage';
+import ContactUs from './Pages/ContactUsPage/ContactUs';
 
 function App() {
   return (
       <div>
         <HomePage/>
-        <About/>
+        <ContactUs/>
       </div>
   );
 }
