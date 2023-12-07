@@ -11,7 +11,7 @@ const Logo = () => {
       </div>
 
       <div className="container" id='aboutMe'>
-        <p>About Me</p>
+        <p>Contact Us</p>
       </div>
     </div>
   );
