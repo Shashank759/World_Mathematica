@@ -1,8 +1,8 @@
 import React from "react";
 //import {useState} from 'react'
 import "./Header.styles.scss";
-import BarButton from "../BarButton/Barbutton";
 import Dropdown from "../Dropdown/Dropdown";
+
 
  class Header extends React.Component {
   constructor() {
@@ -22,8 +22,8 @@ import Dropdown from "../Dropdown/Dropdown";
       <div className="header">
         <div className="options">
            <div className="option" onMouseEnter={()=>{<Dropdown/>}}>
-        
-          PlayList</div>
+    
+          </div>
           <div className="option">Notes</div>
           <div className="option">Previous Year Paper</div>
           <div className="option">Exams</div>

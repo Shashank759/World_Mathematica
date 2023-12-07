@@ -1,13 +1,14 @@
 import React from "react";
-
-const Dropdown = () => {
+import './Dropdown.styles.scss'
+const Dropdown = ({submenus }) => {
   return (
-    <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
-      <div class="dropdown-content">
-        <p>Test</p>
-      </div>
-    </div>
+    <ul className="dropdown">
+      {submenus.map((submenu, index) => (
+        <li key={index} className="menu-items">
+          <a href={submenu.url}>{submenu.title}</a>
+        </li>
+      ))}
+    </ul>
   );
 };
 
