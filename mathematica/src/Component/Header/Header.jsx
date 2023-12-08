@@ -1,19 +1,23 @@
 import React from "react";
 //import {useState} from 'react'
 import "./Header.styles.scss";
-import Dropdown from "../Dropdown/Dropdown";
+import MenuItems from "../MenuItems/MenuItems";
 
 
  class Header extends React.Component {
   constructor() {
     super();
     this.state = {
-      content: [
-        {
-          Name: "PlayList",
-        },
-      ],
-    };
+      item: [
+          {
+              title: "PlayList",
+              submenu: [{
+                  url: "Test",
+                  title: "Subject"
+              }]
+          }
+      ]
+  }
   }
   
 
@@ -21,8 +25,8 @@ import Dropdown from "../Dropdown/Dropdown";
     return (
       <div className="header">
         <div className="options">
-           <div className="option" onMouseEnter={()=>{<Dropdown/>}}>
-    
+           <div className="option" >
+                <MenuItems items={this.state.item}/>
           </div>
           <div className="option">Notes</div>
           <div className="option">Previous Year Paper</div>

@@ -1,0 +1,22 @@
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover {
+    background-color: #3e8e41;
+  }
+
+  .menu-items {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  .menu-items:hover .menu-itemChild {
+      display: block;
+    }

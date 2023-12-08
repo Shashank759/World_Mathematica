@@ -3,6 +3,7 @@ import './Dropdown.styles.scss'
 const Dropdown = ({submenus }) => {
   return (
     <ul className="dropdown">
+    {console.log(submenus)}
       {submenus.map((submenu, index) => (
         <li key={index} className="menu-items">
           <a href={submenu.url}>{submenu.title}</a>
