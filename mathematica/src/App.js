@@ -4,7 +4,7 @@ import ContactUs from './Pages/ContactUsPage/ContactUs';
 
 function App() {
   return (
-      <div>
+      <div className="app">
         <HomePage/>
         <ContactUs/>
       </div>
