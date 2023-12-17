@@ -1,9 +1,31 @@
-.menu-items {
-  position: relative;
-  display: inline-block;
+
+.submenu{
+  margin:0px;
+  padding: 2%;
+  align-items: center;
+  list-style: none;
+}
+
+.Menu-item{
+  width:25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150%;
 }
 
 
-.menu-items:hover .menu-itemChild {
+
+
+.new{
+    position: absolute;
+    top: 35px;
     display: block;
-  }
+    background-color: antiquewhite;
+    padding: 0;
+    width: 18%;
+    border-radius: 12px;
+}
+
+

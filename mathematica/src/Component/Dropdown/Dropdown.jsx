@@ -1,15 +1,12 @@
 import React from "react";
 import './Dropdown.styles.scss'
-const Dropdown = ({submenus }) => {
+const Dropdown = ({item} ) => {
+  console.log(item)
   return (
-    <ul className="dropdown">
-    {console.log(submenus)}
-      {submenus.map((submenu, index) => (
-        <li key={index} className="menu-items">
-          <a href={submenu.url}>{submenu.title}</a>
+
+        <li className="submenu">
+          <a href={item.url}>{item.title}</a>
         </li>
-      ))}
-    </ul>
   );
 };
 

@@ -1,39 +1,101 @@
 import React from "react";
-//import {useState} from 'react'
 import "./Header.styles.scss";
 import MenuItems from "../MenuItems/MenuItems";
 
-
- class Header extends React.Component {
+class Header extends React.Component {
   constructor() {
     super();
     this.state = {
       item: [
-          {
-              title: "PlayList",
-              submenu: [{
-                  url: "Test",
-                  title: "Subject"
-              }]
-          }
-      ]
+        
+          {title: "PlayList",
+          id: 1,
+          submenu: [
+            {
+              id: 1,
+              url: "Test",
+              title: "Subject",
+            },
+            {
+              id: 2,
+              url: "Test",
+              title: "Subject",
+            },{
+              id: 3,
+              url: "Test",
+              title: "Subject",
+            },
+            {
+              id: 4,
+              url: "Test",
+              title: "Subject",
+            },{
+              id: 5,
+              url: "Test",
+              title: "Subject",
+            },
+            {
+              id: 6,
+              url: "Test",
+              title: "Subject",
+            },
+          ],
+        },
+          {title: "Notes",
+          id: 2,
+          submenu: [
+            {
+              id: 1,
+              url: "Test",
+              title: "Subject",
+            },
+            {
+              id: 2,
+              url: "Test",
+              title: "Subject",
+            },
+          ],},
+          {title: "Previous Paper",
+          id: 3,
+          submenu: [
+            {
+              id: 1,
+              url: "Test",
+              title: "Subject",
+            },
+            {
+              id: 2,
+              url: "Test",
+              title: "Subject",
+            },
+          ],},
+         { title: "Exams",
+          id: 4,
+          submenu: [
+            {
+              id: 1,
+              url: "Test",
+              title: "Subject",
+            },
+            {
+              id: 2,
+              url: "Test",
+              title: "Subject",
+            },
+          ],}
+        
+      ],
+    };
   }
-  }
-  
 
   render() {
     return (
       <div className="header">
-        <div className="options">
-           <div className="option" >
-                <MenuItems items={this.state.item}/>
-          </div>
-          <div className="option">Notes</div>
-          <div className="option">Previous Year Paper</div>
-          <div className="option">Exams</div>
-          <div className="option">Mock Test</div>
-        </div>
-      </div>
+        <div className='options'>
+          {this.state.item.map((props)=>{
+           return( <MenuItems items={props} />)
+})}
+  </div></div>
     );
   }
 }

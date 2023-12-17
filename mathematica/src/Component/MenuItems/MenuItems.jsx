@@ -1,31 +1,43 @@
 import React from "react";
 import Dropdown from "../Dropdown/Dropdown";
-import './MenuItems.styles.scss';
+import './MenuItems.styles.scss'
+
 import { useState } from "react";
 
-const MenuItems = ({ items }) => {
+const Menuitem = (props) => {
 
   const [dropdown, setDropdown] = useState(false);
   const onMouseEnter = () => {
     setDropdown(true);
-   };
-    
-    return (
-      
-      <li className="menu-items">
- 
-        {items[0].submenu ? (
-          <>
-            <button type="button" aria-haspopup="menu" className='menu-items' onMouseEnter={onMouseEnter}>
-              {items[0].title}{' '}
-            </button>
-            <Dropdown submenus={items[0].submenu} className='menu-itemChild'  />
-          </>
-        ) : (
-          <a href={items[0].url } className='menu-itemChild'>{items[0].title}</a>
-        )}
-      </li>
-    );
   };
-  
-  export default MenuItems;
+  const onMouseLeave = () => {
+    setDropdown(false);
+  };
+
+  return (
+
+    <div className="Menu-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} >
+      {props.items.submenu.length > 0 ? (
+        <>
+
+          <span id="fix">{props.items.title}{''}</span>
+          <div className="new" >
+          {dropdown ? (
+            <>
+              {props.items.submenu.map((item) => {
+                return (
+                  <Dropdown item={item} />
+                )
+              })} </>) :
+            null}
+          </div>
+        </>
+      ) : (
+        <a href={props.items.url} className='menu-itemChild'>{props.items.title}</a>
+      )}
+
+    </div>
+  );
+};
+
+export default Menuitem;
