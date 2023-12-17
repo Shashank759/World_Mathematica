@@ -1,7 +1,7 @@
 import React from "react";
 import './Dropdown.styles.scss'
 const Dropdown = ({item} ) => {
-  console.log(item)
+
   return (
 
         <li className="submenu">
