@@ -4,21 +4,22 @@
   display: flex;
   background-color: #eaf6f6;
   position: absolute;
+  justify-content: center;
+  align-items: center;
+
+
   
   .options {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color:  #bef0f0;
-    margin-left:20px;
-    margin-right:20px;
+    background-color:  black;
+    margin-left:60px;
+    margin-right:60px;
+    height:80%;
+    bottom: 20px;
 
-    .option {
-      padding: 40px;
-      color: black;
-      cursor: pointer;
-      
-    }
+  
   }
 }

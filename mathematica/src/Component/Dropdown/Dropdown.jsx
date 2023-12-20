@@ -4,9 +4,9 @@ const Dropdown = ({item} ) => {
 
   return (
 
-        <li className="submenu">
+        <div className="submenu">
           <a href={item.url}>{item.title}</a>
-        </li>
+        </div>
   );
 };
 
