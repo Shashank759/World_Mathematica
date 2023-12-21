@@ -1,37 +1,41 @@
 import React from 'react';
-import Footer from '../../Component/Footer/Footer';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 import "./ContactUs.styles.scss";
 
 const ContactUs = () => {
   return (
     <div className="contactUs">
       <h2>Contact Us</h2>
-      <p>
-        Feel free to reach out to us via the following methods or through our
-        social media channels.
-      </p>
       <ul>
         <li>Email: example@example.com</li>
         <li>Phone: +1 123-456-7890</li>
       </ul>
-      <div>
+      <div className="SocailMedia">
         <h3>Connect with us on Social Media</h3>
-        <ul>
+        <ul className="icons">
           <li>
-            <a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer">
-              Facebook
+            <a href="https://www.facebook.com/example" className="facebook social" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/example" target="_blank" rel="noopener noreferrer">
-              Instagram
+            <a href="https://www.instagram.com/example" className="instagram social" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/example" className="youtube social" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faYoutube} size="2x" />
             </a>
           </li>
           {/* Add more social media links as needed */}
         </ul>
       </div>
-      <Footer />
     </div>
+    
   );
 };
 

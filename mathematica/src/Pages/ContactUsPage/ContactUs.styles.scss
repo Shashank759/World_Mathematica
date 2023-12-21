@@ -1,6 +1,35 @@
 .contactUs{
-    border: 2px solid;
     border-radius: 60px 0px;
-    background-color: bisque;
-    padding: 20px;
+    background-color: #eaf6f6;
+    padding: 10px 15px;
+    margin-top: 69px;
+}
+
+.SocailMedia{
+  display: flex;
+  align-items: flex-end;
+}
+.icons{
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+
+a.facebook {
+    color: #4968ad;
+  }
+
+a.instagram {
+  color: black;
+}
+
+a.youtube{
+  color: red;
 }
